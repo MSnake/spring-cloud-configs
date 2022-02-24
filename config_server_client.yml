@@ -8,3 +8,7 @@ app:
             name: "PROTO_RED"
     car:
         model: "BMW"
+    connection:
+        service:
+            simple:
+                color: true
