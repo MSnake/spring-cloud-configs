@@ -1,0 +1,4 @@
+#настройка логирования
+logging:
+  level:
+    ru.gpb: trace

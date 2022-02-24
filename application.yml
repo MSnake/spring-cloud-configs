@@ -1,0 +1,33 @@
+#настройка логирования
+logging:
+  level:
+    ru.gpb: debug
+    org.springframework: warn
+    org.springframework.boot.web.embedded.tomcat.TomcatWebServer: debug
+    org.springframework.cloud.config.client.ConfigServicePropertySourceLocator: info
+    org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration: info
+    liquibase: info
+
+#настройка actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ['health', 'info', 'logfile', 'refresh', 'env', 'loggers', 'configprops', 'metrics', 'prometheus', 'beans', 'deptree', 'gateway']
+
+#настройка spring
+spring:
+  cloud:
+    config:
+      override-system-properties: false #запрет на переопределение системных свойств
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration # отключение стандартного переброса на страницу /error в случае ошибок
+  jpa:
+    open-in-view: false #отключение захвата соединений с БД при входе в сервис
+  datasource:
+    hikari:
+      minimum-idle: 2 #минимальное количество idle соединений c БД в используемом по-умолчанию пуле HikariCP
+
+#настройка tomcat
+server:
+    max-http-header-size: 1048576
