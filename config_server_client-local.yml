@@ -8,8 +8,8 @@ app:
             name: "PROTO_GREEN2"
     car:
         model: "VW2"
-    connection:
-        service:
-            simple:
-                color: false
-                car: true
+#    connection:
+#        service:
+#            simple:
+#                color: false
+#                car: true
