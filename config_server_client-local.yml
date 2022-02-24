@@ -1,10 +1,10 @@
 app:
     info:
-        name: "Spring cloud client application"
-        description: "Test spring cloud client application"
+        name: "Spring cloud client application2"
+        description: "Test spring cloud client application2"
     color:
-        name: "GREEN"
+        name: "GREEN2"
         proto:
-            name: "PROTO_GREEN"
+            name: "PROTO_GREEN2"
     car:
-        model: "VW"
+        model: "VW2"
