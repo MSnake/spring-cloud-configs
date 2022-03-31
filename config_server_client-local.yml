@@ -18,4 +18,10 @@ app:
             test1: true
             test2: true
             test3: false
+        object:
+            featureToggles:
+                test1: false
+                test2: true
+                test3: 123
+                test4: asdsd
     
