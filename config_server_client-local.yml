@@ -13,3 +13,9 @@ app:
             simple:
                 color: false
                 car: true
+    ui:
+        featureToggles:
+            test1: true
+            test2: false
+            test3: true
+    
