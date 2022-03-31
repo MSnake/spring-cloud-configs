@@ -16,6 +16,6 @@ app:
     ui:
         featureToggles:
             test1: true
-            test2: false
-            test3: true
+            test2: true
+            test3: false
     
